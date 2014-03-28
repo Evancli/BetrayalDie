@@ -2,16 +2,264 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     android:background="#ff4444"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.evanli.betrayaldie.MainActivity$PlaceholderFragment" >
 
-    <TextView
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/dice_button"
+            android:text="1"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/dice_button"
+            android:text="2"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/dice_button"
+            android:text="3"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/dice_button"
+            android:text="4"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/dice_button"
+            android:text="5"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/dice_button"
+            android:text="6"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/dice_button"
+            android:text="7"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/dice_button"
+            android:text="8"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/rollButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+		android:layout_centerInParent="true"
+		android:background="@drawable/dice"
+        android:text=""
+        android:textColor="#ffffff" 
+        android:textSize="72sp" />
 
+    <LinearLayout
+        android:id="@+id/dieContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignParentBottom="true" >
+        
+        <Button
+            android:id="@+id/die1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/dice_button"
+            android:text=""
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/die2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/dice_button"
+            android:text=""
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/die3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/dice_button"
+            android:text=""
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/die4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/dice_button"
+            android:text=""
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/die5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/dice_button"
+            android:text=""
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/die6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/dice_button"
+            android:text=""
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/die7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/dice_button"
+            android:text=""
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/die8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/dice_button"
+            android:text=""
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_toLeftOf="@+id/rollButton"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        
+        <TextView
+        android:id="@+id/lastTextView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:gravity="center_vertical"
+        android:textColor="#ffffff" 
+         android:textSize="20sp"
+         android:alpha="0.4"
+        android:text="" />"
+        
+        <TextView
+        android:id="@+id/lastTextView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:gravity="center_vertical"
+        android:textColor="#ffffff" 
+         android:textSize="30sp"
+         android:alpha="0.5"
+        android:text="" />
+        
+        <TextView
+        android:id="@+id/lastTextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:gravity="center_vertical"
+        android:textColor="#ffffff" 
+         android:textSize="40sp"
+         android:alpha="0.6"
+        android:text="" />
+        
+        <TextView
+        android:id="@+id/lastTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:gravity="center_vertical"
+        android:textColor="#ffffff" 
+         android:textSize="50sp"
+         android:alpha="0.7"
+        android:text="" />
+        
+        <TextView
+        android:id="@+id/lastTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:gravity="center_vertical"
+         android:textColor="#ffffff" 
+         android:textSize="60sp"
+         android:alpha="0.8"
+        android:text="" />
+
+    
+        
+    </LinearLayout>
+    
 </RelativeLayout>
